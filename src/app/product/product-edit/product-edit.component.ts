@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-edit.component.scss']
 })
 export class ProductEditComponent implements OnInit {
-
+  isEditMode = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleEdit() {
+    this.isEditMode = !this.isEditMode;
   }
 
 }
