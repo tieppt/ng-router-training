@@ -12,6 +12,9 @@
   <p>
     Price: {{product.price | currency}}
   </p>
+  <p>
+    <a [routerLink]="['/product', product.id, 'edit']">Edit</a>
+  </p>
 </div>
 
 <button (click)="backToList()">Back to list</button>
