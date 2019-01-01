@@ -1,0 +1,11 @@
+<h1>Angular Router</h1>
+
+<nav>
+  <a routerLink="/home" routerLinkActive="selected"
+    [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a [routerLink]="['/about']"
+    routerLinkActive="selected">About</a>
+</nav>
+
+<router-outlet></router-outlet>
+<!-- render component xuong day -->
