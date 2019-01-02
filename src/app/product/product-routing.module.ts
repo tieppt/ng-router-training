@@ -9,7 +9,7 @@ import { CheckEditGuard } from '../check-edit.guard';
 
 const productRoutes: Routes = [
   {
-    path: 'product',
+    path: '',
     component: ProductComponent,
     children: [
       {
