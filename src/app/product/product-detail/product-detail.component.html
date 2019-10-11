@@ -1,0 +1,20 @@
+<p>
+  product-detail works!
+</p>
+<!-- <p>
+  <a [routerLink]="['/product', '855d9c05']">855d9c05</a>
+</p> -->
+<div *ngIf="product">
+  <h2>{{product.name}}</h2>
+  <p>
+    <img [src]="product.imageUrl" [alt]="product.name">
+  </p>
+  <p>
+    Price: {{product.price | currency}}
+  </p>
+  <p>
+    <a [routerLink]="['/product', product.id, 'edit']">Edit</a>
+  </p>
+</div>
+
+<button (click)="backToList()">Back to list</button>
