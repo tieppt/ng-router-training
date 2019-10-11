@@ -4,3 +4,7 @@
 
 <p>Is Edit Mode {{isEditMode}}</p>
 <button (click)="toggleEdit()">Toggle Edit</button>
+
+<form [formGroup]="form">
+  <input type="text" formControlName="data">
+</form>
